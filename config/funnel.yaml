@@ -1,0 +1,190 @@
+# UTILITYnet enrollment — distilled from legacy research (not runtime GWT).
+branding:
+  form_title: UTILITYnet Sign-Up Form
+  intro_title: UTILITYnet Sign-Up Form Information
+  retailer_code: SPARK
+  green_charge_per_kwh: 0.0185
+  service_date_min_days: 10
+  upload_deadline_business_days_before_service: 2
+  email_progress_after_submit: honest
+
+rates:
+  display_line: "Variable Market Price + 0.27 cents/kWh Transaction Fee"
+  rate_code: VARIABLE RATE_ONLY
+  rate_class: RES
+  effective_date: "2025-09-01"
+
+green_power_percentages: [0, 10, 15, 25, 50, 75, 100]
+
+pad_withdrawal_days:
+  - "01"
+  - "02"
+  - "03"
+  - "04"
+  - "05"
+  - "06"
+  - "07"
+  - "08"
+  - "09"
+  - "10"
+  - "11"
+  - "12"
+  - "13"
+  - "14"
+  - "15"
+  - "16"
+  - "17"
+  - "18"
+  - "19"
+  - "20"
+  - "21"
+  - "22"
+  - "23"
+  - "24"
+  - "25"
+  - "26"
+  - "27"
+  - "28"
+  - EOM
+
+customer_care:
+  phone: "(587) 200-2969"
+  fax: "(403) 265-7290"
+  email: customercare@legacyenergy.ca
+  hours: "Monday – Friday, 9:00 AM – 5:00 PM"
+
+mail:
+  from_name: Legacy Energy
+  from_email: customercare@legacyenergy.ca
+
+# Subset of street types — extend from legacy/gwt/extracted-enums.json as needed.
+street_types:
+  - { label: Avenue, code: AVE }
+  - { label: Boulevard, code: BLVD }
+  - { label: Circle, code: CIR }
+  - { label: Close, code: CL }
+  - { label: Court, code: CRT }
+  - { label: Crescent, code: CRESC }
+  - { label: Drive, code: DR }
+  - { label: Gate, code: GATE }
+  - { label: Green, code: GREEN }
+  - { label: Heights, code: HTS }
+  - { label: Highway, code: HWY }
+  - { label: Lane, code: LANE }
+  - { label: Link, code: LINK }
+  - { label: Place, code: PL }
+  - { label: Road, code: RD }
+  - { label: Square, code: SQ }
+  - { label: Street, code: ST }
+  - { label: Terrace, code: TERR }
+  - { label: Trail, code: TRAIL }
+  - { label: Way, code: WAY }
+  - { label: Other, code: OTHER }
+
+street_directions: [N, NE, NW, S, SE, SW, E, W]
+
+unit_types:
+  - { label: Apartment, code: APT }
+  - { label: Suite, code: SUITE }
+  - { label: Unit, code: UNIT }
+
+rural_route_ids:
+  - { label: Rural Route, code: RR }
+  - { label: Suburban Service, code: SS }
+  - { label: Mobile Route, code: MR }
+
+station_types:
+  - { label: Letter Carrier Depot (LCD), code: LCD }
+  - { label: Retail Postal Outlet (RPO), code: RPO }
+  - { label: Station (STN), code: STN }
+
+legal:
+  quarters: [SW, NW, NE, SE]
+  meridians: [W3, W4, W5, W6]
+
+promotions: []
+
+# Field help — legacy initHelp() keys + v1 wizard IDs (? opens panel above form).
+help:
+  account_holder_birth_date:
+    text: >-
+      Since Energy is being provided to and consumed by you before you pay for it, you are being extended
+      credit under this Agreement. By completing this sign-up form, you agree to provide us with and authorize
+      us to request and receive from third parties reasonable financial and credit history and information.
+      You can find more information in our Terms and Conditions.
+  nickname:
+    text: You can enter a nickname now and it will be added to your new account when created.
+  applicant_type:
+    text: >-
+      Select Customer if you are signing up for your own service. Select Authorized representative if you
+      are completing this application on behalf of the customer (additional PAD information may be required).
+  authorized_rep_pad_day:
+    text: >-
+      Pre-authorized debit (PAD) withdrawal day is the calendar day each month (or end of month) when your
+      monthly invoice payment is withdrawn from your bank account, as described in the Terms and Conditions.
+  alternate_contact:
+    text: >-
+      Optional second contact we can reach if we cannot reach the account holder about this application or
+      account.
+  requested_service_date:
+    text: >-
+      Choose the date you want electricity service to start. It must be at least the minimum number of days
+      from today shown below so we can process your enrollment with the wire company.
+  moving_new_location:
+    text: Indicate whether you are moving to a new address for this enrollment or switching service at your current location.
+  location_has_power:
+    text: >-
+      Tell us whether the meter at this location currently has active electricity service. If there is no
+      power, additional steps may be required to connect service (typically 3–5 business days).
+  want_power_at_site:
+    text: If there is no power at the site, indicate whether you want us to request connection of service at this location.
+  referral_code:
+    text: If someone referred you to Legacy Energy, enter their referral code here (optional).
+  promotion_code:
+    text: Enter a promotional code if you received one (optional). Invalid codes may be rejected at submission.
+  air_miles_number:
+    text: Optional AIR MILES collector number if you are participating in an eligible promotion.
+  green_power:
+    text: >-
+      Selecting Yes allows you to choose a percentage of your monthly consumption from the grid to be
+      replenished using Renewable Energy Certificates. You may select a green percentage in intervals and
+      change it later from My Account.
+  green_percentage:
+    text: Choose what share of your usage you want matched with renewable energy certificates for this account.
+  billing_address:
+    text: Billing address is where you have your customer bills and correspondence mailed to.
+  postal_code:
+    text: Enter your postal code in the format A1A 1A1. You can look up a postal code if you are unsure.
+    url: http://www.canadapost.ca/cpotools/apps/fpc/business/findByCity
+    url_label: Find postal code (Canada Post)
+  service_same_as_billing:
+    text: Service address is the location where you require electricity.
+  site_id:
+    text: >-
+      A unique id that is set for your property. This number is usually a 13 digit number beginning with
+      2 zeros (not all companies show the zeros). This number can normally be found on the first or second
+      page of your current bill.
+  meter_number:
+    text: The number located on your meter at your premise.
+  civic_address:
+    url: https://utilitynet.s3.amazonaws.com/public/docs/gapps/help/Civic_Addressing.pdf
+    url_label: Civic addressing guide (PDF)
+  post_office_box:
+    url: https://utilitynet.s3.amazonaws.com/public/docs/gapps/help/Postoffice_Box_Addressing.pdf
+    url_label: Post office box guide (PDF)
+  rural_route:
+    url: https://utilitynet.s3.amazonaws.com/public/docs/gapps/help/Rural_Route_Addressing.pdf
+    url_label: Rural route guide (PDF)
+  general_delivery:
+    url: https://utilitynet.s3.amazonaws.com/public/docs/gapps/help/General_Delivery_Addressing.pdf
+    url_label: General delivery guide (PDF)
+  legal_land_description:
+    url: https://utilitynet.s3.amazonaws.com/public/docs/gapps/help/LegalDescription.jpg
+    url_label: Legal land description example
+  land_title:
+    url: https://utilitynet.s3.amazonaws.com/public/docs/gapps/help/LandTitle.jpg
+    url_label: Land title example
+  bank_document:
+    text: >-
+      Provide a void cheque or pre-authorized debit form from your financial institution to set up PAD for
+      monthly invoices. You may upload now or choose Upload Later and use the link in your confirmation email.

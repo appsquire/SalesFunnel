@@ -1,0 +1,2126 @@
+{
+  "meta": {
+    "source": "cache.js",
+    "strongName": "4012901FB1029028F94D4FDE462AC254",
+    "gwt_version": "2.13.0"
+  },
+  "unit_types": [
+    {
+      "label": "Apartment",
+      "code": "APT"
+    },
+    {
+      "label": "Suite",
+      "code": "SUITE"
+    },
+    {
+      "label": "Unit",
+      "code": "UNIT"
+    }
+  ],
+  "street_types": [
+    {
+      "label": "Abbey",
+      "code": "ABBEY"
+    },
+    {
+      "label": "Acres",
+      "code": "ACRES"
+    },
+    {
+      "label": "Alley",
+      "code": "ALLEY"
+    },
+    {
+      "label": "Autoroute",
+      "code": "AUT"
+    },
+    {
+      "label": "Avenue",
+      "code": "AVE"
+    },
+    {
+      "label": "Bay",
+      "code": "BAY"
+    },
+    {
+      "label": "Beach",
+      "code": "BEACH"
+    },
+    {
+      "label": "Bend",
+      "code": "BEND"
+    },
+    {
+      "label": "Boulevard",
+      "code": "BLVD"
+    },
+    {
+      "label": "By-pass",
+      "code": "BYPASS"
+    },
+    {
+      "label": "Byway",
+      "code": "BYWAY"
+    },
+    {
+      "label": "Campus",
+      "code": "CAMPUS"
+    },
+    {
+      "label": "Cape",
+      "code": "CAPE"
+    },
+    {
+      "label": "Carrefour",
+      "code": "CARREF"
+    },
+    {
+      "label": "Centre",
+      "code": "CTR"
+    },
+    {
+      "label": "Cercle",
+      "code": "CERCLE"
+    },
+    {
+      "label": "Chase",
+      "code": "CHASE"
+    },
+    {
+      "label": "Chemin",
+      "code": "CH"
+    },
+    {
+      "label": "Circle",
+      "code": "CIR"
+    },
+    {
+      "label": "Circuit",
+      "code": "CIRCT"
+    },
+    {
+      "label": "Close",
+      "code": "CLOSE"
+    },
+    {
+      "label": "Common",
+      "code": "COMMON"
+    },
+    {
+      "label": "Concession",
+      "code": "CONC"
+    },
+    {
+      "label": "Corners",
+      "code": "CRNRS"
+    },
+    {
+      "label": "Cour",
+      "code": "COUR"
+    },
+    {
+      "label": "Cours",
+      "code": "COURS"
+    },
+    {
+      "label": "Court",
+      "code": "CRT"
+    },
+    {
+      "label": "Cove",
+      "code": "COVE"
+    },
+    {
+      "label": "Crescent",
+      "code": "CRES"
+    },
+    {
+      "label": "Crest",
+      "code": "CREST"
+    },
+    {
+      "label": "Croissant",
+      "code": "CROIS"
+    },
+    {
+      "label": "Crossing",
+      "code": "CROSS"
+    },
+    {
+      "label": "Cul-de-sac",
+      "code": "CDS"
+    },
+    {
+      "label": "Dale",
+      "code": "DALE"
+    },
+    {
+      "label": "Dell",
+      "code": "DELL"
+    },
+    {
+      "label": "Diversion",
+      "code": "DIVERS"
+    },
+    {
+      "label": "Downs",
+      "code": "DOWNS"
+    },
+    {
+      "label": "Drive",
+      "code": "DR"
+    },
+    {
+      "label": "End",
+      "code": "END"
+    },
+    {
+      "label": "Esplanade",
+      "code": "ESPL"
+    },
+    {
+      "label": "Estates",
+      "code": "ESTATE"
+    },
+    {
+      "label": "Expressway",
+      "code": "EXPY"
+    },
+    {
+      "label": "Extension",
+      "code": "EXTEN"
+    },
+    {
+      "label": "Farm",
+      "code": "FARM"
+    },
+    {
+      "label": "Field",
+      "code": "FIELD"
+    },
+    {
+      "label": "Forest",
+      "code": "FOREST"
+    },
+    {
+      "label": "Freeway",
+      "code": "FWY"
+    },
+    {
+      "label": "Front",
+      "code": "FRONT"
+    },
+    {
+      "label": "Gardens",
+      "code": "GDNS"
+    },
+    {
+      "label": "Gate",
+      "code": "GATE"
+    },
+    {
+      "label": "Glade",
+      "code": "GLADE"
+    },
+    {
+      "label": "Glen",
+      "code": "GLEN"
+    },
+    {
+      "label": "Green",
+      "code": "GREEN"
+    },
+    {
+      "label": "Grounds",
+      "code": "GRNDS"
+    },
+    {
+      "label": "Grove",
+      "code": "GROVE"
+    },
+    {
+      "label": "Harbour",
+      "code": "HARBR"
+    },
+    {
+      "label": "Heath",
+      "code": "HEATH"
+    },
+    {
+      "label": "Heights",
+      "code": "HTS"
+    },
+    {
+      "label": "Highlands",
+      "code": "HGHLDS"
+    },
+    {
+      "label": "Highway",
+      "code": "HWY"
+    },
+    {
+      "label": "Hill",
+      "code": "HILL"
+    },
+    {
+      "label": "Hollow",
+      "code": "HOLLOW"
+    },
+    {
+      "label": "Impasse",
+      "code": "IMP"
+    },
+    {
+      "label": "Inlet",
+      "code": "INLET"
+    },
+    {
+      "label": "Island",
+      "code": "ISLAND"
+    },
+    {
+      "label": "Key",
+      "code": "KEY"
+    },
+    {
+      "label": "Knoll",
+      "code": "KNOLL"
+    },
+    {
+      "label": "Landing",
+      "code": "LANDNG"
+    },
+    {
+      "label": "Lane",
+      "code": "LANE"
+    },
+    {
+      "label": "Limits",
+      "code": "LMTS"
+    },
+    {
+      "label": "Line",
+      "code": "LINE"
+    },
+    {
+      "label": "Link",
+      "code": "LINK"
+    },
+    {
+      "label": "Lookout",
+      "code": "LKOUT"
+    },
+    {
+      "label": "Loop",
+      "code": "LOOP"
+    },
+    {
+      "label": "Mall",
+      "code": "MALL"
+    },
+    {
+      "label": "Manor",
+      "code": "MANOR"
+    },
+    {
+      "label": "Maze",
+      "code": "MAZE"
+    },
+    {
+      "label": "Meadow",
+      "code": "MEADOW"
+    },
+    {
+      "label": "Mews",
+      "code": "MEWS"
+    },
+    {
+      "label": "Moor",
+      "code": "MOOR"
+    },
+    {
+      "label": "Mount",
+      "code": "MOUNT"
+    },
+    {
+      "label": "Mountain",
+      "code": "MTN"
+    },
+    {
+      "label": "Orchard",
+      "code": "ORCH"
+    },
+    {
+      "label": "Parade",
+      "code": "PARADE"
+    },
+    {
+      "label": "Parc",
+      "code": "PARC"
+    },
+    {
+      "label": "Park",
+      "code": "PK"
+    },
+    {
+      "label": "Parkway",
+      "code": "PKY"
+    },
+    {
+      "label": "Passage",
+      "code": "PASS"
+    },
+    {
+      "label": "Path",
+      "code": "PATH"
+    },
+    {
+      "label": "Pathway",
+      "code": "PTWAY"
+    },
+    {
+      "label": "Pines",
+      "code": "PINES"
+    },
+    {
+      "label": "Place (English)",
+      "code": "PL"
+    },
+    {
+      "label": "Place (French)",
+      "code": "PLACE"
+    },
+    {
+      "label": "Plateau",
+      "code": "PLAT"
+    },
+    {
+      "label": "Plaza",
+      "code": "PLAZA"
+    },
+    {
+      "label": "Point",
+      "code": "PT"
+    },
+    {
+      "label": "Pointe",
+      "code": "POINTE"
+    },
+    {
+      "label": "Port",
+      "code": "PORT"
+    },
+    {
+      "label": "Private",
+      "code": "PVT"
+    },
+    {
+      "label": "Promenade",
+      "code": "PROM"
+    },
+    {
+      "label": "Quai",
+      "code": "QUAI"
+    },
+    {
+      "label": "Quay",
+      "code": "QUAY"
+    },
+    {
+      "label": "Ramp",
+      "code": "RAMP"
+    },
+    {
+      "label": "Rang",
+      "code": "RANG"
+    },
+    {
+      "label": "Range",
+      "code": "RG"
+    },
+    {
+      "label": "Ridge",
+      "code": "RIDGE"
+    },
+    {
+      "label": "Rise",
+      "code": "RISE"
+    },
+    {
+      "label": "Road",
+      "code": "RD"
+    },
+    {
+      "label": "Rond-point",
+      "code": "RDPT"
+    },
+    {
+      "label": "Route",
+      "code": "RTE"
+    },
+    {
+      "label": "Row",
+      "code": "ROW"
+    },
+    {
+      "label": "Rue",
+      "code": "RUE"
+    },
+    {
+      "label": "Ruelle",
+      "code": "RLE"
+    },
+    {
+      "label": "Run",
+      "code": "RUN"
+    },
+    {
+      "label": "Sentier",
+      "code": "SENT"
+    },
+    {
+      "label": "Square",
+      "code": "SQ"
+    },
+    {
+      "label": "Street",
+      "code": "ST"
+    },
+    {
+      "label": "Subdivision",
+      "code": "SUBDIV"
+    },
+    {
+      "label": "Terrace",
+      "code": "TERR"
+    },
+    {
+      "label": "Terrasse",
+      "code": "TSSE"
+    }
+  ],
+  "street_directions": [
+    {
+      "label": "East",
+      "code": "E"
+    },
+    {
+      "label": "North",
+      "code": "N"
+    },
+    {
+      "label": "Northeast",
+      "code": "NE"
+    },
+    {
+      "label": "Northwest",
+      "code": "NW"
+    },
+    {
+      "label": "South",
+      "code": "S"
+    },
+    {
+      "label": "Southeast",
+      "code": "SE"
+    },
+    {
+      "label": "Southwest",
+      "code": "SW"
+    },
+    {
+      "label": "West",
+      "code": "W"
+    }
+  ],
+  "provinces_territories_ca": [
+    {
+      "label": "British Columbia",
+      "code": "BC"
+    },
+    {
+      "label": "Manitoba",
+      "code": "MB"
+    },
+    {
+      "label": "New Brunswick",
+      "code": "NB"
+    },
+    {
+      "label": "Newfoundland",
+      "code": "NL"
+    },
+    {
+      "label": "Northwest Territories",
+      "code": "NT"
+    },
+    {
+      "label": "Nunavut",
+      "code": "NU"
+    },
+    {
+      "label": "Nova Scotia",
+      "code": "NS"
+    },
+    {
+      "label": "Ontario",
+      "code": "ON"
+    },
+    {
+      "label": "Prince Edward Island",
+      "code": "PE"
+    },
+    {
+      "label": "Quebec",
+      "code": "QC"
+    },
+    {
+      "label": "Saskatchewan",
+      "code": "SK"
+    },
+    {
+      "label": "Yukon",
+      "code": "YT"
+    }
+  ],
+  "provinces_us": [
+    {
+      "label": "Alaska",
+      "code": "AK"
+    },
+    {
+      "label": "Arizona",
+      "code": "AZ"
+    },
+    {
+      "label": "Arkansas",
+      "code": "AR"
+    },
+    {
+      "label": "California",
+      "code": "CA"
+    },
+    {
+      "label": "Colorado",
+      "code": "CO"
+    },
+    {
+      "label": "Connecticut",
+      "code": "CT"
+    },
+    {
+      "label": "Delaware",
+      "code": "DE"
+    },
+    {
+      "label": "District of Columbia",
+      "code": "DC"
+    },
+    {
+      "label": "Florida",
+      "code": "FL"
+    },
+    {
+      "label": "Georgia",
+      "code": "GA"
+    },
+    {
+      "label": "Hawaii",
+      "code": "HI"
+    },
+    {
+      "label": "Idaho",
+      "code": "ID"
+    },
+    {
+      "label": "Illinois",
+      "code": "IL"
+    },
+    {
+      "label": "Indiana",
+      "code": "IN"
+    },
+    {
+      "label": "Iowa",
+      "code": "IA"
+    },
+    {
+      "label": "Kansas",
+      "code": "KS"
+    },
+    {
+      "label": "Kentucky",
+      "code": "KY"
+    },
+    {
+      "label": "Louisiana",
+      "code": "LA"
+    },
+    {
+      "label": "Maine",
+      "code": "ME"
+    },
+    {
+      "label": "Maryland",
+      "code": "MD"
+    },
+    {
+      "label": "Massachusetts",
+      "code": "MA"
+    },
+    {
+      "label": "Michigan",
+      "code": "MI"
+    },
+    {
+      "label": "Minnesota",
+      "code": "MN"
+    },
+    {
+      "label": "Mississippi",
+      "code": "MS"
+    },
+    {
+      "label": "Missouri",
+      "code": "MO"
+    },
+    {
+      "label": "Montana",
+      "code": "MT"
+    },
+    {
+      "label": "Nebraska",
+      "code": "NE"
+    },
+    {
+      "label": "Nevada",
+      "code": "NV"
+    },
+    {
+      "label": "New Hampshire",
+      "code": "NH"
+    },
+    {
+      "label": "New Jersey",
+      "code": "NJ"
+    },
+    {
+      "label": "New Mexico",
+      "code": "NM"
+    },
+    {
+      "label": "New York",
+      "code": "NY"
+    },
+    {
+      "label": "North Carolina",
+      "code": "NC"
+    },
+    {
+      "label": "North Dakota",
+      "code": "ND"
+    },
+    {
+      "label": "Ohio",
+      "code": "OH"
+    },
+    {
+      "label": "Oklahoma",
+      "code": "OK"
+    },
+    {
+      "label": "Oregon",
+      "code": "OR"
+    },
+    {
+      "label": "Pennsylvania",
+      "code": "PA"
+    },
+    {
+      "label": "Rhode Island",
+      "code": "RI"
+    },
+    {
+      "label": "South Carolina",
+      "code": "SC"
+    },
+    {
+      "label": "South Dakota",
+      "code": "SD"
+    },
+    {
+      "label": "Tennessee",
+      "code": "TN"
+    },
+    {
+      "label": "Texas",
+      "code": "TX"
+    },
+    {
+      "label": "Utah",
+      "code": "UT"
+    },
+    {
+      "label": "Vermont",
+      "code": "VT"
+    },
+    {
+      "label": "Virginia",
+      "code": "VA"
+    },
+    {
+      "label": "Washington",
+      "code": "WA"
+    },
+    {
+      "label": "West Virginia",
+      "code": "WV"
+    },
+    {
+      "label": "Wisconsin",
+      "code": "WI"
+    },
+    {
+      "label": "Wyoming",
+      "code": "WY"
+    }
+  ],
+  "countries": [],
+  "rural_station_road_misc": [
+    {
+      "label": "Highway",
+      "code": "HWY"
+    },
+    {
+      "label": "Range Road",
+      "code": "RGE. RD."
+    },
+    {
+      "label": "Township",
+      "code": "TWP"
+    },
+    {
+      "label": "Suburban Service",
+      "code": "SS"
+    },
+    {
+      "label": "Mobile Route",
+      "code": "MR"
+    },
+    {
+      "label": "Highway",
+      "code": "HWY"
+    },
+    {
+      "label": "Route",
+      "code": "RTE"
+    }
+  ],
+  "other": [],
+  "qfb_field_labels": [
+    "Channel Partner",
+    "Choose one : ",
+    "LSD",
+    "Meridian",
+    "Optional Top Up : ",
+    "PAD",
+    "Quarter",
+    "Range",
+    "Section",
+    "Township"
+  ],
+  "pad_withdrawal_days": [
+    "01",
+    "02",
+    "03",
+    "04",
+    "05",
+    "06",
+    "07",
+    "08",
+    "09",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "EOM"
+  ],
+  "green_power_percentages": [
+    0,
+    10,
+    15,
+    25,
+    50,
+    75,
+    100
+  ],
+  "nickname_max_length": 40,
+  "ehb_pairs_all": [
+    {
+      "label": "Apartment",
+      "code": "APT"
+    },
+    {
+      "label": "Suite",
+      "code": "SUITE"
+    },
+    {
+      "label": "Unit",
+      "code": "UNIT"
+    },
+    {
+      "label": "Highway",
+      "code": "HWY"
+    },
+    {
+      "label": "Range Road",
+      "code": "RGE. RD."
+    },
+    {
+      "label": "Township",
+      "code": "TWP"
+    },
+    {
+      "label": "East",
+      "code": "E"
+    },
+    {
+      "label": "North",
+      "code": "N"
+    },
+    {
+      "label": "Northeast",
+      "code": "NE"
+    },
+    {
+      "label": "NE",
+      "code": "NE"
+    },
+    {
+      "label": "Northwest",
+      "code": "NW"
+    },
+    {
+      "label": "NW",
+      "code": "NW"
+    },
+    {
+      "label": "South",
+      "code": "S"
+    },
+    {
+      "label": "Southeast",
+      "code": "SE"
+    },
+    {
+      "label": "SE",
+      "code": "SE"
+    },
+    {
+      "label": "Southwest",
+      "code": "SW"
+    },
+    {
+      "label": "SW",
+      "code": "SW"
+    },
+    {
+      "label": "West",
+      "code": "W"
+    },
+    {
+      "label": "Suburban Service",
+      "code": "SS"
+    },
+    {
+      "label": "Mobile Route",
+      "code": "MR"
+    },
+    {
+      "label": "British Columbia",
+      "code": "BC"
+    },
+    {
+      "label": "Manitoba",
+      "code": "MB"
+    },
+    {
+      "label": "New Brunswick",
+      "code": "NB"
+    },
+    {
+      "label": "Newfoundland",
+      "code": "NL"
+    },
+    {
+      "label": "Northwest Territories",
+      "code": "NT"
+    },
+    {
+      "label": "Nunavut",
+      "code": "NU"
+    },
+    {
+      "label": "Nova Scotia",
+      "code": "NS"
+    },
+    {
+      "label": "Ontario",
+      "code": "ON"
+    },
+    {
+      "label": "Prince Edward Island",
+      "code": "PE"
+    },
+    {
+      "label": "Quebec",
+      "code": "QC"
+    },
+    {
+      "label": "Saskatchewan",
+      "code": "SK"
+    },
+    {
+      "label": "Yukon",
+      "code": "YT"
+    },
+    {
+      "label": "Alaska",
+      "code": "AK"
+    },
+    {
+      "label": "Arizona",
+      "code": "AZ"
+    },
+    {
+      "label": "Arkansas",
+      "code": "AR"
+    },
+    {
+      "label": "California",
+      "code": "CA"
+    },
+    {
+      "label": "Colorado",
+      "code": "CO"
+    },
+    {
+      "label": "Connecticut",
+      "code": "CT"
+    },
+    {
+      "label": "Delaware",
+      "code": "DE"
+    },
+    {
+      "label": "District of Columbia",
+      "code": "DC"
+    },
+    {
+      "label": "Florida",
+      "code": "FL"
+    },
+    {
+      "label": "Georgia",
+      "code": "GA"
+    },
+    {
+      "label": "Hawaii",
+      "code": "HI"
+    },
+    {
+      "label": "Idaho",
+      "code": "ID"
+    },
+    {
+      "label": "Illinois",
+      "code": "IL"
+    },
+    {
+      "label": "Indiana",
+      "code": "IN"
+    },
+    {
+      "label": "Iowa",
+      "code": "IA"
+    },
+    {
+      "label": "Kansas",
+      "code": "KS"
+    },
+    {
+      "label": "Kentucky",
+      "code": "KY"
+    },
+    {
+      "label": "Louisiana",
+      "code": "LA"
+    },
+    {
+      "label": "Maine",
+      "code": "ME"
+    },
+    {
+      "label": "Maryland",
+      "code": "MD"
+    },
+    {
+      "label": "Massachusetts",
+      "code": "MA"
+    },
+    {
+      "label": "Michigan",
+      "code": "MI"
+    },
+    {
+      "label": "Minnesota",
+      "code": "MN"
+    },
+    {
+      "label": "Mississippi",
+      "code": "MS"
+    },
+    {
+      "label": "Missouri",
+      "code": "MO"
+    },
+    {
+      "label": "Montana",
+      "code": "MT"
+    },
+    {
+      "label": "Nebraska",
+      "code": "NE"
+    },
+    {
+      "label": "Nevada",
+      "code": "NV"
+    },
+    {
+      "label": "New Hampshire",
+      "code": "NH"
+    },
+    {
+      "label": "New Jersey",
+      "code": "NJ"
+    },
+    {
+      "label": "New Mexico",
+      "code": "NM"
+    },
+    {
+      "label": "New York",
+      "code": "NY"
+    },
+    {
+      "label": "North Carolina",
+      "code": "NC"
+    },
+    {
+      "label": "North Dakota",
+      "code": "ND"
+    },
+    {
+      "label": "Ohio",
+      "code": "OH"
+    },
+    {
+      "label": "Oklahoma",
+      "code": "OK"
+    },
+    {
+      "label": "Oregon",
+      "code": "OR"
+    },
+    {
+      "label": "Pennsylvania",
+      "code": "PA"
+    },
+    {
+      "label": "Rhode Island",
+      "code": "RI"
+    },
+    {
+      "label": "South Carolina",
+      "code": "SC"
+    },
+    {
+      "label": "South Dakota",
+      "code": "SD"
+    },
+    {
+      "label": "Tennessee",
+      "code": "TN"
+    },
+    {
+      "label": "Texas",
+      "code": "TX"
+    },
+    {
+      "label": "Utah",
+      "code": "UT"
+    },
+    {
+      "label": "Vermont",
+      "code": "VT"
+    },
+    {
+      "label": "Virginia",
+      "code": "VA"
+    },
+    {
+      "label": "Washington",
+      "code": "WA"
+    },
+    {
+      "label": "West Virginia",
+      "code": "WV"
+    },
+    {
+      "label": "Wisconsin",
+      "code": "WI"
+    },
+    {
+      "label": "Wyoming",
+      "code": "WY"
+    },
+    {
+      "label": "Abbey",
+      "code": "ABBEY"
+    },
+    {
+      "label": "Acres",
+      "code": "ACRES"
+    },
+    {
+      "label": "Alley",
+      "code": "ALLEY"
+    },
+    {
+      "label": "Autoroute",
+      "code": "AUT"
+    },
+    {
+      "label": "Avenue",
+      "code": "AVE"
+    },
+    {
+      "label": "Bay",
+      "code": "BAY"
+    },
+    {
+      "label": "Beach",
+      "code": "BEACH"
+    },
+    {
+      "label": "Bend",
+      "code": "BEND"
+    },
+    {
+      "label": "Boulevard",
+      "code": "BLVD"
+    },
+    {
+      "label": "By-pass",
+      "code": "BYPASS"
+    },
+    {
+      "label": "Byway",
+      "code": "BYWAY"
+    },
+    {
+      "label": "Campus",
+      "code": "CAMPUS"
+    },
+    {
+      "label": "Cape",
+      "code": "CAPE"
+    },
+    {
+      "label": "Carrefour",
+      "code": "CARREF"
+    },
+    {
+      "label": "Centre",
+      "code": "CTR"
+    },
+    {
+      "label": "Cercle",
+      "code": "CERCLE"
+    },
+    {
+      "label": "Chase",
+      "code": "CHASE"
+    },
+    {
+      "label": "Chemin",
+      "code": "CH"
+    },
+    {
+      "label": "Circle",
+      "code": "CIR"
+    },
+    {
+      "label": "Circuit",
+      "code": "CIRCT"
+    },
+    {
+      "label": "Close",
+      "code": "CLOSE"
+    },
+    {
+      "label": "Common",
+      "code": "COMMON"
+    },
+    {
+      "label": "Concession",
+      "code": "CONC"
+    },
+    {
+      "label": "Corners",
+      "code": "CRNRS"
+    },
+    {
+      "label": "Cour",
+      "code": "COUR"
+    },
+    {
+      "label": "Cours",
+      "code": "COURS"
+    },
+    {
+      "label": "Court",
+      "code": "CRT"
+    },
+    {
+      "label": "Cove",
+      "code": "COVE"
+    },
+    {
+      "label": "Crescent",
+      "code": "CRES"
+    },
+    {
+      "label": "Crest",
+      "code": "CREST"
+    },
+    {
+      "label": "Croissant",
+      "code": "CROIS"
+    },
+    {
+      "label": "Crossing",
+      "code": "CROSS"
+    },
+    {
+      "label": "Cul-de-sac",
+      "code": "CDS"
+    },
+    {
+      "label": "Dale",
+      "code": "DALE"
+    },
+    {
+      "label": "Dell",
+      "code": "DELL"
+    },
+    {
+      "label": "Diversion",
+      "code": "DIVERS"
+    },
+    {
+      "label": "Downs",
+      "code": "DOWNS"
+    },
+    {
+      "label": "Drive",
+      "code": "DR"
+    },
+    {
+      "label": "End",
+      "code": "END"
+    },
+    {
+      "label": "Esplanade",
+      "code": "ESPL"
+    },
+    {
+      "label": "Estates",
+      "code": "ESTATE"
+    },
+    {
+      "label": "Expressway",
+      "code": "EXPY"
+    },
+    {
+      "label": "Extension",
+      "code": "EXTEN"
+    },
+    {
+      "label": "Farm",
+      "code": "FARM"
+    },
+    {
+      "label": "Field",
+      "code": "FIELD"
+    },
+    {
+      "label": "Forest",
+      "code": "FOREST"
+    },
+    {
+      "label": "Freeway",
+      "code": "FWY"
+    },
+    {
+      "label": "Front",
+      "code": "FRONT"
+    },
+    {
+      "label": "Gardens",
+      "code": "GDNS"
+    },
+    {
+      "label": "Gate",
+      "code": "GATE"
+    },
+    {
+      "label": "Glade",
+      "code": "GLADE"
+    },
+    {
+      "label": "Glen",
+      "code": "GLEN"
+    },
+    {
+      "label": "Green",
+      "code": "GREEN"
+    },
+    {
+      "label": "Grounds",
+      "code": "GRNDS"
+    },
+    {
+      "label": "Grove",
+      "code": "GROVE"
+    },
+    {
+      "label": "Harbour",
+      "code": "HARBR"
+    },
+    {
+      "label": "Heath",
+      "code": "HEATH"
+    },
+    {
+      "label": "Heights",
+      "code": "HTS"
+    },
+    {
+      "label": "Highlands",
+      "code": "HGHLDS"
+    },
+    {
+      "label": "Highway",
+      "code": "HWY"
+    },
+    {
+      "label": "Hill",
+      "code": "HILL"
+    },
+    {
+      "label": "Hollow",
+      "code": "HOLLOW"
+    },
+    {
+      "label": "Impasse",
+      "code": "IMP"
+    },
+    {
+      "label": "Inlet",
+      "code": "INLET"
+    },
+    {
+      "label": "Island",
+      "code": "ISLAND"
+    },
+    {
+      "label": "Key",
+      "code": "KEY"
+    },
+    {
+      "label": "Knoll",
+      "code": "KNOLL"
+    },
+    {
+      "label": "Landing",
+      "code": "LANDNG"
+    },
+    {
+      "label": "Lane",
+      "code": "LANE"
+    },
+    {
+      "label": "Limits",
+      "code": "LMTS"
+    },
+    {
+      "label": "Line",
+      "code": "LINE"
+    },
+    {
+      "label": "Link",
+      "code": "LINK"
+    },
+    {
+      "label": "Lookout",
+      "code": "LKOUT"
+    },
+    {
+      "label": "Loop",
+      "code": "LOOP"
+    },
+    {
+      "label": "Mall",
+      "code": "MALL"
+    },
+    {
+      "label": "Manor",
+      "code": "MANOR"
+    },
+    {
+      "label": "Maze",
+      "code": "MAZE"
+    },
+    {
+      "label": "Meadow",
+      "code": "MEADOW"
+    },
+    {
+      "label": "Mews",
+      "code": "MEWS"
+    },
+    {
+      "label": "Moor",
+      "code": "MOOR"
+    },
+    {
+      "label": "Mount",
+      "code": "MOUNT"
+    },
+    {
+      "label": "Mountain",
+      "code": "MTN"
+    },
+    {
+      "label": "Orchard",
+      "code": "ORCH"
+    },
+    {
+      "label": "Parade",
+      "code": "PARADE"
+    },
+    {
+      "label": "Parc",
+      "code": "PARC"
+    },
+    {
+      "label": "Park",
+      "code": "PK"
+    },
+    {
+      "label": "Parkway",
+      "code": "PKY"
+    },
+    {
+      "label": "Passage",
+      "code": "PASS"
+    },
+    {
+      "label": "Path",
+      "code": "PATH"
+    },
+    {
+      "label": "Pathway",
+      "code": "PTWAY"
+    },
+    {
+      "label": "Pines",
+      "code": "PINES"
+    },
+    {
+      "label": "Place (English)",
+      "code": "PL"
+    },
+    {
+      "label": "Place (French)",
+      "code": "PLACE"
+    },
+    {
+      "label": "Plateau",
+      "code": "PLAT"
+    },
+    {
+      "label": "Plaza",
+      "code": "PLAZA"
+    },
+    {
+      "label": "Point",
+      "code": "PT"
+    },
+    {
+      "label": "Pointe",
+      "code": "POINTE"
+    },
+    {
+      "label": "Port",
+      "code": "PORT"
+    },
+    {
+      "label": "Private",
+      "code": "PVT"
+    },
+    {
+      "label": "Promenade",
+      "code": "PROM"
+    },
+    {
+      "label": "Quai",
+      "code": "QUAI"
+    },
+    {
+      "label": "Quay",
+      "code": "QUAY"
+    },
+    {
+      "label": "Ramp",
+      "code": "RAMP"
+    },
+    {
+      "label": "Rang",
+      "code": "RANG"
+    },
+    {
+      "label": "Range",
+      "code": "RG"
+    },
+    {
+      "label": "Ridge",
+      "code": "RIDGE"
+    },
+    {
+      "label": "Rise",
+      "code": "RISE"
+    },
+    {
+      "label": "Road",
+      "code": "RD"
+    },
+    {
+      "label": "Rond-point",
+      "code": "RDPT"
+    },
+    {
+      "label": "Route",
+      "code": "RTE"
+    },
+    {
+      "label": "Row",
+      "code": "ROW"
+    },
+    {
+      "label": "Rue",
+      "code": "RUE"
+    },
+    {
+      "label": "Ruelle",
+      "code": "RLE"
+    },
+    {
+      "label": "Run",
+      "code": "RUN"
+    },
+    {
+      "label": "Sentier",
+      "code": "SENT"
+    },
+    {
+      "label": "Square",
+      "code": "SQ"
+    },
+    {
+      "label": "Street",
+      "code": "ST"
+    },
+    {
+      "label": "Subdivision",
+      "code": "SUBDIV"
+    },
+    {
+      "label": "Terrace",
+      "code": "TERR"
+    },
+    {
+      "label": "Terrasse",
+      "code": "TSSE"
+    },
+    {
+      "label": "Thicket",
+      "code": "THICK"
+    },
+    {
+      "label": "Towers",
+      "code": "TOWERS"
+    },
+    {
+      "label": "Townline",
+      "code": "TLINE"
+    },
+    {
+      "label": "Trail",
+      "code": "TRAIL"
+    },
+    {
+      "label": "Turnabout",
+      "code": "TRNABT"
+    },
+    {
+      "label": "Vale",
+      "code": "VALE"
+    },
+    {
+      "label": "Via",
+      "code": "VIA"
+    },
+    {
+      "label": "View",
+      "code": "VIEW"
+    },
+    {
+      "label": "Village",
+      "code": "VILLGE"
+    },
+    {
+      "label": "Villas",
+      "code": "VILLAS"
+    },
+    {
+      "label": "Vista",
+      "code": "VISTA"
+    },
+    {
+      "label": "Voie",
+      "code": "VOIE"
+    },
+    {
+      "label": "Walk",
+      "code": "WALK"
+    },
+    {
+      "label": "Way",
+      "code": "WAY"
+    },
+    {
+      "label": "Wharf",
+      "code": "WHARF"
+    },
+    {
+      "label": "Wood",
+      "code": "WOOD"
+    },
+    {
+      "label": "Wynd",
+      "code": "WYND"
+    }
+  ],
+  "notes": {
+    "station_type_road_type_rural_route": "Loaded via AIb/RPC at runtime in legacy; validation message: 'Either a Rural Route or a Road Type must be entered.' Not static arrays in this bundle.",
+    "legal_ats_fields": "Quarter, LSD, Section, Township, Range, Meridian use qFb widgets; enum source may be server-side.",
+    "road_type": "Loaded via AIb RPC (roadTypeCode); static Ehb includes Range Road, Road, Route, Highway. Rural validation: Either Rural Route or Road Type required."
+  },
+  "rural_route_identifier": [
+    {
+      "label": "RR",
+      "code": "RR"
+    },
+    {
+      "label": "Suburban Service",
+      "code": "SS"
+    },
+    {
+      "label": "Mobile Route",
+      "code": "MR"
+    }
+  ],
+  "road_type_misc_ehb": [
+    {
+      "label": "Highway",
+      "code": "HWY"
+    },
+    {
+      "label": "Range Road",
+      "code": "RGE. RD."
+    },
+    {
+      "label": "Township",
+      "code": "TWP"
+    },
+    {
+      "label": "Highway",
+      "code": "HWY"
+    },
+    {
+      "label": "Road",
+      "code": "RD"
+    },
+    {
+      "label": "Route",
+      "code": "RTE"
+    }
+  ],
+  "station_type_notes": "Options loaded via AIb RPC (AddressInfoBuilder); default list item Tuc='Select'. Capture from network RPC or server docs.",
+  "qfb_widgets": [
+    "Channel Partner",
+    "Choose one : ",
+    "LSD",
+    "Meridian",
+    "Optional Top Up : ",
+    "PAD",
+    "Quarter",
+    "Range",
+    "Section",
+    "Township"
+  ],
+  "validation_messages": [
+    "&nbsp;Invalid Field Marker.",
+    "&nbsp;Required Field. ",
+    "Do you want power at this site? [ 3 - 5 business days to complete ]",
+    "aria-invalid"
+  ],
+  "legal_land_section": {
+    "min": 1,
+    "max": 36,
+    "values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ]
+  },
+  "legal_land_township": {
+    "min": 1,
+    "max": 126,
+    "values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54,
+      55,
+      56,
+      57,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      72,
+      73,
+      74,
+      75,
+      76,
+      77,
+      78,
+      79,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      93,
+      94,
+      95,
+      96,
+      97,
+      98,
+      99,
+      100,
+      101,
+      102,
+      103,
+      104,
+      105,
+      106,
+      107,
+      108,
+      109,
+      110,
+      111,
+      112,
+      113,
+      114,
+      115,
+      116,
+      117,
+      118,
+      119,
+      120,
+      121,
+      122,
+      123,
+      124,
+      125,
+      126
+    ]
+  },
+  "legal_land_quarter": [
+    {
+      "label": "SW",
+      "code": "SW"
+    },
+    {
+      "label": "NW",
+      "code": "NW"
+    },
+    {
+      "label": "NE",
+      "code": "NE"
+    },
+    {
+      "label": "SE",
+      "code": "SE"
+    }
+  ],
+  "legal_land_meridian": [
+    {
+      "label": "W3",
+      "code": "W3"
+    },
+    {
+      "label": "W4",
+      "code": "W4"
+    },
+    {
+      "label": "W5",
+      "code": "W5"
+    },
+    {
+      "label": "W6",
+      "code": "W6"
+    }
+  ],
+  "station_type": [
+    {
+      "label": "Letter Carrier Depot (LCD)",
+      "code": "LCD"
+    },
+    {
+      "label": "Retail Postal Outlet(RPO)",
+      "code": "RPO"
+    },
+    {
+      "label": "Station (STN)",
+      "code": "STN"
+    }
+  ],
+  "station_type_all_XUb": [],
+  "legal_land_lsd": {
+    "min": 1,
+    "max": 16,
+    "values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ]
+  },
+  "legal_land_range": {
+    "min": 1,
+    "max": 36,
+    "values": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36
+    ]
+  },
+  "ui_labels_present": {
+    "Requested Service Date": true,
+    "Are you moving": true,
+    "Referred By": true,
+    "Promotion Code": true,
+    "AIR MILES": true,
+    "Account Holder": true,
+    "Alternate Contact": true,
+    "Billing Address": true,
+    "Service Address same": true,
+    "Site Id": true,
+    "Meter Number": true,
+    "Apt/Suite/Unit": true,
+    "House Number": true,
+    "Pre Street Direction": true,
+    "Marketing Contract": true,
+    "Applicant is": true,
+    "Green Percentage": true,
+    "Example Consumption": true,
+    "Authorized Representative Additional Information": true
+  }
+}

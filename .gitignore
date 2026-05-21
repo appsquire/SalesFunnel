@@ -1,0 +1,17 @@
+node_modules/
+.svelte-kit/
+build/
+.env
+.env.local
+.env.docker
+dist/
+
+# Python
+__pycache__/
+.venv/
+venv/
+*.pyc
+backend/data/
+
+# OS
+.DS_Store
