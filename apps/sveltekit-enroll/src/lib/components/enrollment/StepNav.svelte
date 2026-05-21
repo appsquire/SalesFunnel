@@ -188,17 +188,52 @@
 			<button
 				type="button"
 				id="enrollment-step-nav-toggle"
-				class="flex min-h-12 w-full items-center justify-between gap-3 rounded-lg bg-sky-50 px-4 py-3 text-left ring-1 ring-sky-200 active:bg-sky-100"
+				class="flex min-h-12 w-full items-center gap-3 rounded-xl border border-sky-300 bg-white px-3 py-2.5 text-left shadow-sm active:bg-sky-50
+					{mobileOpen ? 'ring-2 ring-sky-400' : ''}"
 				aria-expanded={mobileOpen}
 				aria-controls="enrollment-step-nav"
+				aria-label={mobileOpen ? 'Close enrollment steps menu' : 'Open enrollment steps menu'}
 				onclick={() => (mobileOpen = !mobileOpen)}
 			>
+				<span
+					id="enrollment-step-nav-toggle-icon"
+					class="flex h-11 w-11 shrink-0 items-center justify-center rounded-lg bg-sky-600 text-white shadow-sm"
+					aria-hidden="true"
+				>
+					{#if mobileOpen}
+						<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+							<path stroke-linecap="round" d="M6 6l12 12M18 6L6 18" />
+						</svg>
+					{:else}
+						<svg class="h-6 w-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+							<path stroke-linecap="round" d="M4 7h16M4 12h16M4 17h16" />
+						</svg>
+					{/if}
+				</span>
 				<span class="min-w-0 flex-1">
-					<span class="block text-xs font-normal text-slate-500">Step {currentStep} of 11</span>
+					<span class="block text-[11px] font-semibold uppercase tracking-wide text-sky-700">
+						{mobileOpen ? 'Hide menu' : 'Sign-up menu'}
+					</span>
+					<span class="block text-xs text-slate-500">Step {currentStep} of 11</span>
 					<span class="block truncate text-sm font-semibold text-sky-950">{currentStepLabel}</span>
 				</span>
-				<span class="shrink-0 text-sm font-medium text-sky-800" aria-hidden="true">
-					{mobileOpen ? 'Close' : 'Steps'}
+				<span
+					id="enrollment-step-nav-toggle-chevron"
+					class="flex shrink-0 flex-col items-center gap-0.5 rounded-lg bg-sky-50 px-2.5 py-2 ring-1 ring-sky-200"
+					aria-hidden="true"
+				>
+					<span class="text-[10px] font-bold uppercase tracking-wide text-sky-800">
+						{mobileOpen ? 'Close' : 'Steps'}
+					</span>
+					<svg
+						class="h-4 w-4 text-sky-700 transition-transform {mobileOpen ? '-rotate-90' : 'rotate-90'}"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2.5"
+					>
+						<path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+					</svg>
 				</span>
 			</button>
 		</div>
