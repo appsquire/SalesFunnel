@@ -56,6 +56,35 @@ docker compose --env-file .env.docker up -d
 
 SQLite lives in the Docker volume `enrollment_data`. To reset drafts: `docker compose down -v` (destructive).
 
+### 502 Bad Gateway on the server
+
+Nginx returns **502** when it cannot reach the **web** (SvelteKit) or **api** container.
+
+On the VPS, from the project directory:
+
+```bash
+docker compose ps
+docker compose logs web --tail 80
+docker compose logs nginx --tail 30
+curl -s -o /dev/null -w "enroll:%{http_code}\n" http://127.0.0.1:8080/enroll
+```
+
+| What you see | What to do |
+|--------------|------------|
+| `web` **Restarting** or **Exit** | Read `docker compose logs web` — often **build OOM** or `npm run build` failed. Try `docker compose build --no-cache web` (needs ~1–2 GB RAM free). |
+| `web` **Up (healthy)** but curl not 200 | Check `HTTP_PORT` in `.env.docker`; host nginx must proxy to that port (default **8080**). |
+| Port **80** already in use | Do not set `HTTP_PORT=80` if **host nginx** uses 80. Keep Docker on **8080** and proxy from host nginx to `127.0.0.1:8080`. |
+| `web` recreated, nginx older (502 after `--build web`) | Nginx cached old container IP — run `docker compose restart nginx` or pull latest `deploy/nginx.conf` (dynamic DNS). |
+
+Full reset (keeps DB volume):
+
+```bash
+docker compose --env-file .env.docker down
+docker compose --env-file .env.docker up -d --build
+```
+
+Set `PUBLIC_APP_URL=https://your-real-domain` in `.env.docker` (used by API + SvelteKit `ORIGIN`).
+
 ## Tests
 
 ```bash

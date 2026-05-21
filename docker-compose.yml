@@ -9,7 +9,7 @@ services:
       api:
         condition: service_healthy
       web:
-        condition: service_started
+        condition: service_healthy
     restart: unless-stopped
 
   web:
@@ -20,8 +20,21 @@ services:
       LEGACY_CONTENT_DIR: /legacy
       HOST: 0.0.0.0
       PORT: 3000
+      ORIGIN: ${PUBLIC_APP_URL:-http://localhost:8080}
     expose:
       - "3000"
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "require('http').get('http://127.0.0.1:3000/enroll', (r) => process.exit(r.statusCode && r.statusCode < 500 ? 0 : 1)).on('error', () => process.exit(1))",
+        ]
+      interval: 15s
+      timeout: 10s
+      retries: 5
+      start_period: 30s
     restart: unless-stopped
 
   api:

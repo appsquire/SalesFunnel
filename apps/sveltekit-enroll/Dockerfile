@@ -6,7 +6,7 @@ COPY apps/sveltekit-enroll/package.json apps/sveltekit-enroll/package-lock.json 
 RUN npm ci
 
 COPY apps/sveltekit-enroll/ ./
-RUN npm run build && npm prune --production
+RUN npm run build && npm prune --production && test -f build/index.js
 
 FROM node:20-bookworm-slim
 
