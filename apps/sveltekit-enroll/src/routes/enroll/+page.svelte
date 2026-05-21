@@ -106,10 +106,20 @@
 	}
 
 	function fieldClass(name: string): string {
-		const base = 'mt-1 w-full rounded border px-3 py-2';
+		const base =
+			'mt-1 w-full rounded border px-3 py-3 text-base min-h-12 sm:py-2 sm:text-sm sm:min-h-[2.5rem]';
 		return fieldErrors[name]
 			? `${base} border-red-500 ring-1 ring-red-200`
 			: `${base} border-slate-300`;
+	}
+
+	function selectClass(name?: string): string {
+		const base =
+			'mt-1 w-full rounded border border-slate-300 px-3 py-3 text-base min-h-12 sm:py-2 sm:text-sm sm:min-h-[2.5rem]';
+		if (name && fieldErrors[name]) {
+			return `${base} border-red-500 ring-1 ring-red-200`;
+		}
+		return base;
 	}
 
 	async function goContinue() {
@@ -287,8 +297,8 @@
 	<div class="flex min-h-screen flex-col md:flex-row">
 		<StepNav {currentStep} {maxReached} {stepStatus} {showNav} onNavigate={navigate} />
 
-		<main class="flex flex-1 flex-col" id="enrollment-main">
-			<header class="border-b border-slate-200 bg-white px-6 py-4">
+		<main class="flex min-w-0 flex-1 flex-col" id="enrollment-main">
+			<header class="border-b border-slate-200 bg-white px-4 py-4 sm:px-6">
 				<h1 class="text-lg font-semibold text-sky-900" id="enrollment-form-title">
 					{(funnelConfig?.branding as { form_title?: string })?.form_title ?? 'UTILITYnet Sign-Up Form'}
 				</h1>
@@ -313,7 +323,7 @@
 				</p>
 			</header>
 
-			<div class="flex-1 px-6 py-8">
+			<div class="flex-1 px-4 py-6 sm:px-6 sm:py-8">
 				{#if error}
 					<div
 						class="mb-4 rounded border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800"
@@ -440,7 +450,7 @@
 								<input
 									id="enrollment-birthday"
 									type="date"
-									class="mt-1 w-full rounded border border-slate-300 px-3 py-2"
+									class={fieldClass('birthday')}
 									bind:value={payload.birthday}
 								/>
 							</label>
@@ -455,7 +465,7 @@
 								<input
 									id="enrollment-nickname"
 									maxlength="40"
-									class="mt-1 w-full rounded border border-slate-300 px-3 py-2"
+									class={fieldClass('nickname')}
 									bind:value={payload.nickname}
 								/>
 							</label>
@@ -463,7 +473,7 @@
 								<span>Phone extension (optional)</span>
 								<input
 									id="enrollment-phone-extension"
-									class="mt-1 w-full rounded border border-slate-300 px-3 py-2"
+									class={fieldClass('phone_extension')}
 									bind:value={payload.phone_extension}
 								/>
 							</label>
@@ -483,8 +493,8 @@
 									onHelpToggle={toggleHelp}
 								/>
 							</legend>
-							<div class="flex flex-col gap-2 text-sm">
-								<label class="flex items-center gap-2">
+							<div class="flex flex-col gap-1 text-sm">
+								<label class="flex min-h-12 cursor-pointer items-center gap-3 rounded-lg border border-transparent px-2 py-2 active:bg-slate-50">
 									<input
 										id="enrollment-applicant-type-customer"
 										type="radio"
@@ -494,7 +504,7 @@
 									/>
 									I am the customer
 								</label>
-								<label class="flex items-center gap-2">
+								<label class="flex min-h-12 cursor-pointer items-center gap-3 rounded-lg border border-transparent px-2 py-2 active:bg-slate-50">
 									<input
 										id="enrollment-applicant-type-rep"
 										type="radio"
@@ -637,7 +647,7 @@
 					<section id="enrollment-step-5">
 						<h2 class="mb-4 text-xl font-medium">Rate &amp; power</h2>
 						<p class="mb-4 rounded bg-slate-100 px-3 py-2 text-sm" id="enrollment-rate-line">{rateLine}</p>
-						<label class="mb-4 flex flex-wrap items-center gap-2 text-sm">
+						<label class="mb-4 block text-sm">
 							<FieldLabelWithHelp
 								label="Does this location currently have power?"
 								helpId="location_has_power"
@@ -647,7 +657,7 @@
 							/>
 							<select
 								id="enrollment-location-has-power"
-								class="rounded border border-slate-300 px-2 py-1"
+								class={selectClass('location_has_power')}
 								bind:value={payload.location_has_power}
 							>
 								<option value="">Select…</option>
@@ -656,7 +666,7 @@
 							</select>
 						</label>
 						{#if payload.location_has_power === 'no'}
-							<label class="flex flex-wrap items-center gap-2 text-sm">
+							<label class="block text-sm">
 								<FieldLabelWithHelp
 									label="Do you want power at this site? (3–5 business days)"
 									helpId="want_power_at_site"
@@ -664,7 +674,11 @@
 									{activeHelpId}
 									onHelpToggle={toggleHelp}
 								/>
-								<select id="enrollment-want-power" class="rounded border border-slate-300 px-2 py-1" bind:value={payload.want_power_at_site}>
+								<select
+									id="enrollment-want-power"
+									class={selectClass('want_power_at_site')}
+									bind:value={payload.want_power_at_site}
+								>
 									<option value="">Select…</option>
 									<option value="yes">Yes</option>
 									<option value="no">No</option>
@@ -869,10 +883,11 @@
 								Land title
 							</button>
 						</p>
-						<label class="mb-4 flex flex-wrap items-center gap-2 text-sm">
+						<label class="mb-4 flex min-h-12 cursor-pointer items-start gap-3 rounded-lg px-1 py-2 text-sm active:bg-slate-50">
 							<input
 								id="enrollment-service-same-as-billing"
 								type="checkbox"
+								class="mt-1 h-5 w-5 shrink-0 rounded border-slate-300"
 								checked={payload.service_same_as_billing === 'yes'}
 								onchange={(e) => {
 									payload.service_same_as_billing = (e.currentTarget as HTMLInputElement).checked
@@ -937,9 +952,9 @@
 						</p>
 						<dl class="max-w-lg divide-y divide-slate-200 rounded border border-slate-200 text-sm" id="enrollment-review-list">
 							{#each reviewRows() as row, i (row.label)}
-								<div class="grid grid-cols-3 gap-2 px-3 py-2">
+								<div class="flex flex-col gap-1 border-b border-slate-100 px-3 py-3 last:border-0 sm:grid sm:grid-cols-3 sm:gap-2 sm:py-2">
 									<dt class="font-medium text-slate-600">{row.label}</dt>
-									<dd class="col-span-2 text-slate-900" id="enrollment-review-{i}">{row.value}</dd>
+									<dd class="text-slate-900 sm:col-span-2" id="enrollment-review-{i}">{row.value}</dd>
 								</div>
 							{/each}
 						</dl>
@@ -959,11 +974,12 @@
 								>
 							</li>
 						</ul>
-						<div class="max-w-lg space-y-3 text-sm">
-							<label class="flex items-start gap-2">
+						<div class="max-w-lg space-y-2 text-base sm:text-sm">
+							<label class="flex min-h-12 cursor-pointer items-start gap-3 rounded-lg px-1 py-3 active:bg-slate-50">
 								<input
 									id="enrollment-disclosure-acknowledged"
 									type="checkbox"
+									class="mt-0.5 h-5 w-5 shrink-0 rounded border-slate-300"
 									checked={payload.disclosure_acknowledged === 'yes'}
 									onchange={(e) => {
 										payload.disclosure_acknowledged = (e.currentTarget as HTMLInputElement).checked
@@ -973,10 +989,11 @@
 								/>
 								<span>I have read and agree to the disclosure and terms.</span>
 							</label>
-							<label class="flex items-start gap-2">
+							<label class="flex min-h-12 cursor-pointer items-start gap-3 rounded-lg px-1 py-3 active:bg-slate-50">
 								<input
 									id="enrollment-pad-acknowledged"
 									type="checkbox"
+									class="mt-0.5 h-5 w-5 shrink-0 rounded border-slate-300"
 									checked={payload.pad_acknowledged === 'yes'}
 									onchange={(e) => {
 										payload.pad_acknowledged = (e.currentTarget as HTMLInputElement).checked ? 'yes' : 'no';
@@ -1000,10 +1017,11 @@
 						<p class="mb-4 max-w-lg text-sm text-slate-600">
 							Upload a void cheque or PAD form now, or choose Upload Later (you will receive a link by email).
 						</p>
-						<label class="mb-4 flex items-center gap-2 text-sm">
+						<label class="mb-4 flex min-h-12 cursor-pointer items-center gap-3 rounded-lg px-1 py-2 text-base active:bg-slate-50 sm:text-sm">
 							<input
 								id="enrollment-upload-later"
 								type="checkbox"
+								class="h-5 w-5 shrink-0 rounded border-slate-300"
 								checked={payload.upload_later === 'yes'}
 								onchange={(e) => {
 									payload.upload_later = (e.currentTarget as HTMLInputElement).checked ? 'yes' : 'no';
@@ -1035,13 +1053,13 @@
 			</div>
 
 			<footer
-				class="flex items-center justify-between border-t border-slate-200 bg-white px-6 py-4"
+				class="sticky bottom-0 z-20 flex gap-3 border-t border-slate-200 bg-white px-4 py-3 pb-[max(0.75rem,env(safe-area-inset-bottom))] sm:px-6 sm:py-4"
 				id="enrollment-actions"
 			>
 				<button
 					type="button"
 					id="enrollment-back"
-					class="rounded border border-slate-300 px-4 py-2 text-sm disabled:opacity-40"
+					class="min-h-12 min-w-[44%] flex-1 rounded-lg border border-slate-300 px-4 py-3 text-base font-medium active:bg-slate-50 disabled:opacity-40 sm:min-h-0 sm:py-2 sm:text-sm"
 					disabled={currentStep === 0 || saving}
 					onclick={goBack}
 				>
@@ -1053,7 +1071,7 @@
 					<button
 						type="button"
 						id="enrollment-submit"
-						class="rounded bg-green-700 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+						class="min-h-12 min-w-[44%] flex-1 rounded-lg bg-green-700 px-4 py-3 text-base font-semibold text-white active:bg-green-800 disabled:opacity-50 sm:min-h-0 sm:py-2 sm:text-sm"
 						disabled={saving}
 						onclick={handleSubmit}
 					>
@@ -1063,7 +1081,7 @@
 					<button
 						type="button"
 						id="enrollment-continue"
-						class="rounded bg-sky-700 px-4 py-2 text-sm font-medium text-white disabled:opacity-50"
+						class="min-h-12 min-w-[44%] flex-1 rounded-lg bg-sky-700 px-4 py-3 text-base font-semibold text-white active:bg-sky-800 disabled:opacity-50 sm:min-h-0 sm:py-2 sm:text-sm"
 						disabled={saving}
 						onclick={goContinue}
 					>

@@ -6,7 +6,7 @@
 	const doc = $derived(data.doc);
 </script>
 
-<article class="mx-auto max-w-4xl px-6 py-10" id="legal-page">
+<article class="mx-auto max-w-4xl px-4 py-8 sm:px-6 sm:py-10" id="legal-page">
 	<h1 class="mb-6 text-2xl font-semibold text-sky-900" id="legal-page-title">{doc.title}</h1>
 	<div class="legal-content" id="legal-page-body">
 		{@html doc.body}

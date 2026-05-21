@@ -29,7 +29,7 @@
 	<button
 		type="button"
 		id="enrollment-help-trigger-{helpId}"
-		class="inline-flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-sky-600 text-xs font-bold leading-none text-white shadow-sm hover:bg-sky-700 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-1
+		class="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-sky-600 text-sm font-bold leading-none text-white shadow-sm active:bg-sky-800 focus:outline-none focus-visible:ring-2 focus-visible:ring-sky-400 focus-visible:ring-offset-2 md:h-8 md:w-8 md:text-xs md:active:bg-sky-700
 		{expanded ? 'ring-2 ring-sky-300 ring-offset-1' : ''}"
 		aria-label="Help for this field"
 		aria-expanded={expanded}

@@ -38,7 +38,7 @@
 {#if show && anchor && entry}
 	<div
 		id="enrollment-field-help-panel"
-		class="fixed z-50 w-72 max-w-[calc(100vw-1rem)] rounded-md border border-sky-300 bg-sky-50 px-4 py-3 text-sm text-sky-950 shadow-lg"
+		class="fixed z-50 w-[min(100vw-1rem,20rem)] max-h-[min(70vh,24rem)] overflow-y-auto rounded-md border border-sky-300 bg-sky-50 px-4 py-3 text-base text-sky-950 shadow-lg sm:text-sm"
 		style="top: {anchor.top}px; left: {anchor.left}px;"
 		role="dialog"
 		aria-modal="false"

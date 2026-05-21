@@ -3,7 +3,7 @@ export type HelpAnchor = {
 	left: number;
 };
 
-export function anchorFromElement(el: HTMLElement, panelWidth = 288): HelpAnchor {
+export function anchorFromElement(el: HTMLElement, panelWidth = 320): HelpAnchor {
 	const r = el.getBoundingClientRect();
 	const gap = 6;
 	let left = r.left;
